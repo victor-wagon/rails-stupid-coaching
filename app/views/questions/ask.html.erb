@@ -1,0 +1,12 @@
+<div class="container text-center">
+  <nav class="navbar sticky-top navbar-dark bg-primary">
+    <a class="navbar-brand" href="#!">Welcome! Ask questions to your coach.</a>
+  </nav>
+  <form action="/answer" method="get">
+    <div class="form-group">
+      <label for="questionbox"></label>
+      <input type="text" name="question" class="form-control m-1" id="questionbox" placeholder="Enter your question" value="<%= params[:question] %>">
+      <button type="submit" class="btn btn-primary align-content-center">Submit</button>
+    </div>
+  </form>
+</div>
